@@ -31,5 +31,10 @@ namespace WPFCG.UserCtrl
             this.GPUText.Text = "72";
             this.RAMText.Text = "15";
         }
+
+        private void InitEvent(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

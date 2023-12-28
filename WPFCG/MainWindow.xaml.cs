@@ -33,8 +33,8 @@ namespace WPFCG
             if (index == 3) XC.Content = new HardwareCheck();
             if (index == 4) XC.Content = new HandwareInfo();
             if (index == 5) { }
-            if (index == 6) { }
-            if (index == 7) { }
+            if (index == 6) XC.Content = new ElePhoto();
+            if (index == 7) XC.Content = new DiyBackgroud();
             if (index == 8) XC.Content = new SystemSetting();
         }
     }

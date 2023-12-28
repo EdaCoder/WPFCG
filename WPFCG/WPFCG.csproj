@@ -58,6 +58,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="UserCtrl\DiyBackgroud.xaml.cs">
+      <DependentUpon>DiyBackgroud.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserCtrl\ElePhoto.xaml.cs">
+      <DependentUpon>ElePhoto.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserCtrl\HandwareInfo.xaml.cs">
       <DependentUpon>HandwareInfo.xaml</DependentUpon>
     </Compile>
@@ -83,6 +89,14 @@
     <Page Include="Styles\Theme.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserCtrl\DiyBackgroud.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserCtrl\ElePhoto.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UserCtrl\HandwareInfo.xaml">
       <SubType>Designer</SubType>

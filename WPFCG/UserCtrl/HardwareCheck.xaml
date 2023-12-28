@@ -9,6 +9,7 @@
     xmlns:uc="clr-namespace:WPFCG.Controls"
     d:DesignHeight="450"
     d:DesignWidth="800"
+    Loaded="InitEvent"
     mc:Ignorable="d">
     <UserControl.Resources>
         <Storyboard x:Key="LoadingX" RepeatBehavior="Forever">
@@ -148,7 +149,14 @@
                                     Fill="White"
                                     Stretch="Fill" />
                             </TextBlock>
-                            <TextBlock Style="{DynamicResource Info}" Text="CPU使用率" />
+                            <UniformGrid Width="260" Columns="2">
+                                <TextBlock Style="{DynamicResource Info}" Text="CPU使用率" />
+                                <TextBlock
+                                    x:Name="CT1"
+                                    HorizontalAlignment="Right"
+                                    Style="{DynamicResource Info}"
+                                    Text="120PWD" />
+                            </UniformGrid>
                         </WrapPanel>
                     </StackPanel>
                     <StackPanel Margin="0,20,0,0">
@@ -168,7 +176,14 @@
                                     Fill="White"
                                     Stretch="Fill" />
                             </TextBlock>
-                            <TextBlock Style="{DynamicResource Info}" Text="CPU使用率" />
+                            <UniformGrid Width="260" Columns="2">
+                                <TextBlock Style="{DynamicResource Info}" Text="CPU使用率" />
+                                <TextBlock
+                                    x:Name="CT2"
+                                    HorizontalAlignment="Right"
+                                    Style="{DynamicResource Info}"
+                                    Text="120PWD" />
+                            </UniformGrid>
                         </WrapPanel>
                     </StackPanel>
                     <StackPanel Margin="0,20,0,0">
@@ -188,7 +203,14 @@
                                     Fill="White"
                                     Stretch="Fill" />
                             </TextBlock>
-                            <TextBlock Style="{DynamicResource Info}" Text="CPU使用率" />
+                            <UniformGrid Width="260" Columns="2">
+                                <TextBlock Style="{DynamicResource Info}" Text="CPU使用率" />
+                                <TextBlock
+                                    x:Name="CT3"
+                                    HorizontalAlignment="Right"
+                                    Style="{DynamicResource Info}"
+                                    Text="120PWD" />
+                            </UniformGrid>
                         </WrapPanel>
                     </StackPanel>
                     <StackPanel Margin="0,20,0,0">
@@ -208,7 +230,14 @@
                                     Fill="White"
                                     Stretch="Fill" />
                             </TextBlock>
-                            <TextBlock Style="{DynamicResource Info}" Text="CPU使用率" />
+                            <UniformGrid Width="260" Columns="2">
+                                <TextBlock Style="{DynamicResource Info}" Text="CPU使用率" />
+                                <TextBlock
+                                    x:Name="CT4"
+                                    HorizontalAlignment="Right"
+                                    Style="{DynamicResource Info}"
+                                    Text="120PWD" />
+                            </UniformGrid>
                         </WrapPanel>
                     </StackPanel>
                 </StackPanel>
@@ -302,7 +331,14 @@
                                     Fill="White"
                                     Stretch="Fill" />
                             </TextBlock>
-                            <TextBlock Style="{DynamicResource Info}" Text="GPU使用率" />
+                            <UniformGrid Width="260" Columns="2">
+                                <TextBlock Style="{DynamicResource Info}" Text="GPU使用率" />
+                                <TextBlock
+                                    x:Name="GT1"
+                                    HorizontalAlignment="Right"
+                                    Style="{DynamicResource Info}"
+                                    Text="120PWD" />
+                            </UniformGrid>
                         </WrapPanel>
                     </StackPanel>
                     <StackPanel Margin="0,20,0,0">
@@ -322,7 +358,14 @@
                                     Fill="White"
                                     Stretch="Fill" />
                             </TextBlock>
-                            <TextBlock Style="{DynamicResource Info}" Text="GPU使用率" />
+                            <UniformGrid Width="260" Columns="2">
+                                <TextBlock Style="{DynamicResource Info}" Text="GPU使用率" />
+                                <TextBlock
+                                    x:Name="GT2"
+                                    HorizontalAlignment="Right"
+                                    Style="{DynamicResource Info}"
+                                    Text="120PWD" />
+                            </UniformGrid>
                         </WrapPanel>
                     </StackPanel>
                     <StackPanel Margin="0,20,0,0">
@@ -342,7 +385,14 @@
                                     Fill="White"
                                     Stretch="Fill" />
                             </TextBlock>
-                            <TextBlock Style="{DynamicResource Info}" Text="GPU使用率" />
+                            <UniformGrid Width="260" Columns="2">
+                                <TextBlock Style="{DynamicResource Info}" Text="GPU使用率" />
+                                <TextBlock
+                                    x:Name="GT3"
+                                    HorizontalAlignment="Right"
+                                    Style="{DynamicResource Info}"
+                                    Text="120PWD" />
+                            </UniformGrid>
                         </WrapPanel>
                     </StackPanel>
                     <StackPanel Margin="0,20,0,0">
@@ -362,7 +412,14 @@
                                     Fill="White"
                                     Stretch="Fill" />
                             </TextBlock>
-                            <TextBlock Style="{DynamicResource Info}" Text="GPU使用率" />
+                            <UniformGrid Width="260" Columns="2">
+                                <TextBlock Style="{DynamicResource Info}" Text="GPU使用率" />
+                                <TextBlock
+                                    x:Name="GT4"
+                                    HorizontalAlignment="Right"
+                                    Style="{DynamicResource Info}"
+                                    Text="120PWD" />
+                            </UniformGrid>
                         </WrapPanel>
                     </StackPanel>
                 </StackPanel>
@@ -456,7 +513,14 @@
                                     Fill="White"
                                     Stretch="Fill" />
                             </TextBlock>
-                            <TextBlock Style="{DynamicResource Info}" Text="RAM使用率" />
+                            <UniformGrid Width="260" Columns="2">
+                                <TextBlock Style="{DynamicResource Info}" Text="RAM使用率" />
+                                <TextBlock
+                                    x:Name="RT1"
+                                    HorizontalAlignment="Right"
+                                    Style="{DynamicResource Info}"
+                                    Text="120PWD" />
+                            </UniformGrid>
                         </WrapPanel>
                     </StackPanel>
                     <StackPanel Margin="0,20,0,0">
@@ -476,7 +540,14 @@
                                     Fill="White"
                                     Stretch="Fill" />
                             </TextBlock>
-                            <TextBlock Style="{DynamicResource Info}" Text="RAM使用率" />
+                            <UniformGrid Width="260" Columns="2">
+                                <TextBlock Style="{DynamicResource Info}" Text="RAM使用率" />
+                                <TextBlock
+                                    x:Name="RT2"
+                                    HorizontalAlignment="Right"
+                                    Style="{DynamicResource Info}"
+                                    Text="120PWD" />
+                            </UniformGrid>
                         </WrapPanel>
                     </StackPanel>
                 </StackPanel>
