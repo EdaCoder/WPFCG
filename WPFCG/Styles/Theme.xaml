@@ -86,8 +86,51 @@
             </Setter.Value>
         </Setter>
     </Style>
+    <Style x:Key="Btn2" TargetType="Button">
+        <Setter Property="FontSize" Value="15" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <uc:BeveledBorder
+                        x:Name="PART"
+                        Width="140"
+                        Height="40"
+                        Margin="2"
+                        BorderBrush="#CCCCCC"
+                        BorderThickness="0.2"
+                        CornerRadius="5">
+                        <uc:BeveledBorder.Background>
+                            <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                <GradientStop Color="#061834" />
+                                <GradientStop Offset="1" Color="#0f407e" />
+                            </LinearGradientBrush>
+                        </uc:BeveledBorder.Background>
+                        <TextBlock
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            FontSize="{TemplateBinding FontSize}"
+                            Foreground="White"
+                            Text="{TemplateBinding Content}" />
+                    </uc:BeveledBorder>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="PART" Property="Background">
+                                <Setter.Value>
+                                    <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                        <GradientStop Color="#121b2a" />
+                                        <GradientStop Offset="1" Color="#323c49" />
+                                    </LinearGradientBrush>
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
     <Style x:Key="Handware" TargetType="TextBlock">
         <Setter Property="FontSize" Value="20" />
+        <Setter Property="FontWeight" Value="Bold" />
         <Setter Property="Foreground" Value="White" />
         <Setter Property="VerticalAlignment" Value="Center" />
     </Style>

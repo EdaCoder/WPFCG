@@ -5,74 +5,88 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:WPFCG.UserCtrl"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:uc="clr-namespace:WPFCG.Controls"
     d:DesignHeight="450"
     d:DesignWidth="800"
     Loaded="InitEvent"
     mc:Ignorable="d">
-    <StackPanel>
-        <StackPanel Margin="20" Orientation="Horizontal">
-            <TextBlock Style="{DynamicResource Handware}" Text="CPU型号" />
-            <TextBlock
-                x:Name="C1"
-                Margin="20,0"
-                Style="{DynamicResource Handware}"
-                Text="Intel Core" />
+    <uc:BeveledBorder
+        Height="510"
+        Margin="10,0,0,50"
+        Background="Transparent"
+        BorderThickness="1"
+        CornerRadius="5">
+        <uc:BeveledBorder.BorderBrush>
+            <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                <GradientStop Color="SkyBlue" />
+                <GradientStop Offset="1" Color="LightBlue" />
+            </LinearGradientBrush>
+        </uc:BeveledBorder.BorderBrush>
+        <StackPanel>
+            <StackPanel Margin="20" Orientation="Horizontal">
+                <TextBlock Style="{DynamicResource Handware}" Text="CPU型号" />
+                <TextBlock
+                    x:Name="C1"
+                    Margin="20,0"
+                    Style="{DynamicResource Handware}"
+                    Text="Intel Core" />
+            </StackPanel>
+            <StackPanel Margin="20" Orientation="Horizontal">
+                <TextBlock Style="{DynamicResource Handware}" Text="主板型号" />
+                <TextBlock
+                    x:Name="C2"
+                    Margin="20,0"
+                    Style="{DynamicResource Handware}"
+                    Text="Intel Core" />
+            </StackPanel>
+            <StackPanel Margin="20" Orientation="Horizontal">
+                <TextBlock Style="{DynamicResource Handware}" Text="内存型号" />
+                <TextBlock
+                    x:Name="C3"
+                    Margin="20,0"
+                    Style="{DynamicResource Handware}"
+                    Text="Intel Core" />
+            </StackPanel>
+            <StackPanel Margin="20" Orientation="Horizontal">
+                <TextBlock Style="{DynamicResource Handware}" Text="硬盘型号" />
+                <TextBlock
+                    x:Name="C4"
+                    Margin="20,0"
+                    Style="{DynamicResource Handware}"
+                    Text="Intel Core" />
+            </StackPanel>
+            <StackPanel Margin="20" Orientation="Horizontal">
+                <TextBlock Style="{DynamicResource Handware}" Text="显卡型号" />
+                <TextBlock
+                    x:Name="C5"
+                    Margin="20,0"
+                    Style="{DynamicResource Handware}"
+                    Text="Intel Core" />
+            </StackPanel>
+            <StackPanel Margin="20" Orientation="Horizontal">
+                <TextBlock Style="{DynamicResource Handware}" Text="声卡型号" />
+                <TextBlock
+                    x:Name="C6"
+                    Margin="20,0"
+                    Style="{DynamicResource Handware}"
+                    Text="Intel Core" />
+            </StackPanel>
+            <StackPanel Margin="20" Orientation="Horizontal">
+                <TextBlock Style="{DynamicResource Handware}" Text="网卡型号" />
+                <TextBlock
+                    x:Name="C7"
+                    Margin="20,0"
+                    Style="{DynamicResource Handware}"
+                    Text="Intel Core" />
+            </StackPanel>
+            <StackPanel Margin="20" Orientation="Horizontal">
+                <TextBlock Style="{DynamicResource Handware}" Text="系统版本" />
+                <TextBlock
+                    x:Name="C8"
+                    Margin="20,0"
+                    Style="{DynamicResource Handware}"
+                    Text="Intel Core" />
+            </StackPanel>
         </StackPanel>
-        <StackPanel Margin="20" Orientation="Horizontal">
-            <TextBlock Style="{DynamicResource Handware}" Text="主板型号" />
-            <TextBlock
-                x:Name="C2"
-                Margin="20,0"
-                Style="{DynamicResource Handware}"
-                Text="Intel Core" />
-        </StackPanel>
-        <StackPanel Margin="20" Orientation="Horizontal">
-            <TextBlock Style="{DynamicResource Handware}" Text="内存型号" />
-            <TextBlock
-                x:Name="C3"
-                Margin="20,0"
-                Style="{DynamicResource Handware}"
-                Text="Intel Core" />
-        </StackPanel>
-        <StackPanel Margin="20" Orientation="Horizontal">
-            <TextBlock Style="{DynamicResource Handware}" Text="硬盘型号" />
-            <TextBlock
-                x:Name="C4"
-                Margin="20,0"
-                Style="{DynamicResource Handware}"
-                Text="Intel Core" />
-        </StackPanel>
-        <StackPanel Margin="20" Orientation="Horizontal">
-            <TextBlock Style="{DynamicResource Handware}" Text="显卡型号" />
-            <TextBlock
-                x:Name="C5"
-                Margin="20,0"
-                Style="{DynamicResource Handware}"
-                Text="Intel Core" />
-        </StackPanel>
-        <StackPanel Margin="20" Orientation="Horizontal">
-            <TextBlock Style="{DynamicResource Handware}" Text="声卡型号" />
-            <TextBlock
-                x:Name="C6"
-                Margin="20,0"
-                Style="{DynamicResource Handware}"
-                Text="Intel Core" />
-        </StackPanel>
-        <StackPanel Margin="20" Orientation="Horizontal">
-            <TextBlock Style="{DynamicResource Handware}" Text="网卡型号" />
-            <TextBlock
-                x:Name="C7"
-                Margin="20,0"
-                Style="{DynamicResource Handware}"
-                Text="Intel Core" />
-        </StackPanel>
-        <StackPanel Margin="20" Orientation="Horizontal">
-            <TextBlock Style="{DynamicResource Handware}" Text="系统版本" />
-            <TextBlock
-                x:Name="C8"
-                Margin="20,0"
-                Style="{DynamicResource Handware}"
-                Text="Intel Core" />
-        </StackPanel>
-    </StackPanel>
+    </uc:BeveledBorder>
 </UserControl>

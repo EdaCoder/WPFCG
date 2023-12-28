@@ -12,30 +12,30 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using WPFCG.UserCtrl;
 
-namespace WPFCG
+namespace WPFCG.UserCtrl
 {
     /// <summary>
-    /// MainWindow.xaml 的交互逻辑
+    /// SystemSetting.xaml 的交互逻辑
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class SystemSetting : UserControl
     {
-        public MainWindow()
+        public SystemSetting()
         {
             InitializeComponent();
         }
+
         private void Handle(object sender, RoutedEventArgs e)
         {
             var index = int.Parse((sender as Button).CommandParameter.ToString());
-            if (index == 1) this.WindowState = WindowState.Minimized;
-            if (index == 2) this.Close();
-            if (index == 3) XC.Content = new HardwareCheck();
-            if (index == 4) XC.Content = new HandwareInfo();
-            if (index == 5) { }
-            if (index == 6) { }
-            if (index == 7) { }
-            if (index == 8) XC.Content = new SystemSetting();
+            if (index == 1) //更新
+            { 
+            
+            }
+            if (index == 2) //开机启动
+            { 
+            
+            }
         }
     }
 }
