@@ -24,6 +24,7 @@ namespace WPFCG
         public MainWindow()
         {
             InitializeComponent();
+            this.XC.Content = new HardwareCheck();
         }
         private void Handle(object sender, RoutedEventArgs e)
         {
@@ -32,7 +33,7 @@ namespace WPFCG
             if (index == 2) this.Close();
             if (index == 3) XC.Content = new HardwareCheck();
             if (index == 4) XC.Content = new HandwareInfo();
-            if (index == 5) { }
+            if (index == 5) XC.Content = new TFT();
             if (index == 6) XC.Content = new ElePhoto();
             if (index == 7) XC.Content = new DiyBackgroud();
             if (index == 8) XC.Content = new SystemSetting();
