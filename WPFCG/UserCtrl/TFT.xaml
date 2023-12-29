@@ -540,9 +540,23 @@
                             Style="{DynamicResource Handware}"
                             Text="切换速度" />
                         <StackPanel HorizontalAlignment="Left" Orientation="Horizontal">
-                            <Button Style="{DynamicResource BtnSp}" />
-                            <Button Margin="5,0,0,0" Style="{DynamicResource BtnSp}" />
-                            <Button Margin="5,0,0,0" Style="{DynamicResource BtnSp}" />
+                            <Border
+                                x:Name="X1"
+                                Width="35"
+                                Height="8"
+                                Background="DeepSkyBlue" />
+                            <Border
+                                x:Name="X2"
+                                Width="35"
+                                Height="8"
+                                Margin="5,0,0,0"
+                                Background="DeepSkyBlue" />
+                            <Border
+                                x:Name="X3"
+                                Width="35"
+                                Height="8"
+                                Margin="5,0,0,0"
+                                Background="DeepSkyBlue" />
                         </StackPanel>
                     </UniformGrid>
                 </uc:BeveledBorder>

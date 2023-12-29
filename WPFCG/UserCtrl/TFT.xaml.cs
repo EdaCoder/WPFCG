@@ -24,7 +24,53 @@ namespace WPFCG.UserCtrl
         public TFT()
         {
             InitializeComponent();
+            X1.PreviewMouseLeftButtonDown += MouseEvent1;
+            X2.PreviewMouseLeftButtonDown += MouseEvent2;
+            X3.PreviewMouseLeftButtonDown += MouseEvent3;
         }
+
+        bool X1F = false; bool X2F = false; bool X3F = false;
+
+        private void MouseEvent1(object sender, MouseButtonEventArgs e)
+        {
+            if (X1F)
+            {
+                X1F = false;
+                (sender as Border).Background = Brushes.DeepSkyBlue;
+            }
+            else
+            {
+                X1F = true;
+                (sender as Border).Background = Brushes.White;
+            }
+        }
+        private void MouseEvent2(object sender, MouseButtonEventArgs e)
+        {
+            if (X2F)
+            {
+                X2F = false;
+                (sender as Border).Background = Brushes.DeepSkyBlue;
+            }
+            else
+            {
+                X2F = true;
+                (sender as Border).Background = Brushes.White;
+            }
+        }
+        private void MouseEvent3(object sender, MouseButtonEventArgs e)
+        {
+            if (X3F)
+            {
+                X3F = false;
+                (sender as Border).Background = Brushes.DeepSkyBlue;
+            }
+            else
+            {
+                X3F = true;
+                (sender as Border).Background = Brushes.White;
+            }
+        }
+
         /// <summary>
         /// CPU选中
         /// </summary>
